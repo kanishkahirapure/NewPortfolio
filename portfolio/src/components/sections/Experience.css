@@ -1,0 +1,104 @@
+.experience__timeline {
+  position: relative;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+/* Vertical line */
+.experience__timeline::before {
+  content: '';
+  position: absolute;
+  left: 16px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: var(--color-border);
+}
+
+/* Experience item */
+.exp-item {
+  position: relative;
+  padding-left: 56px;
+  margin-bottom: 40px;
+}
+
+.exp-item:last-child {
+  margin-bottom: 0;
+}
+
+/* Dot on the timeline */
+.exp-item__dot {
+  position: absolute;
+  left: 8px;
+  top: 6px;
+  width: 18px;
+  height: 18px;
+  background-color: var(--color-primary);
+  border-radius: 50%;
+  border: 3px solid var(--color-bg);
+}
+
+/* Card */
+.exp-item__card {
+  background-color: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  padding: 20px 24px;
+  transition: border-color 0.2s;
+}
+
+.exp-item__card:hover {
+  border-color: var(--color-primary);
+}
+
+.exp-item__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 4px;
+}
+
+.exp-item__role {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--color-white);
+}
+
+.exp-item__date {
+  font-size: 0.82rem;
+  color: var(--color-primary);
+  font-weight: 600;
+  white-space: nowrap;
+  background-color: rgba(108, 99, 255, 0.1);
+  padding: 4px 10px;
+  border-radius: 12px;
+}
+
+.exp-item__company {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  margin-bottom: 12px;
+}
+
+.exp-item__desc {
+  list-style: disc;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.exp-item__desc li {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 480px) {
+  .exp-item__header {
+    flex-direction: column;
+  }
+}

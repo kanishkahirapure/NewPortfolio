@@ -1,0 +1,86 @@
+.about {
+  background-color: var(--color-bg-alt);
+  color: var(--color-text);
+}
+
+.about__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.about__text p {
+  color: var(--color-text-muted);
+  margin-bottom: 16px;
+  line-height: 1.8;
+}
+
+.about__text em {
+  color: var(--color-primary);
+  font-family: var(--serif);
+  font-weight: 400;
+}
+
+.about__links {
+  margin-top: 28px;
+}
+
+/* Quick facts card */
+.about__facts {
+  background-color: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  padding: 28px;
+}
+
+.about__facts-title {
+  color: var(--color-white);
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.about__facts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.about__facts-list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 0.9rem;
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 12px;
+}
+
+.about__facts-list li:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.about__fact-label {
+  color: var(--color-text-muted);
+  font-weight: 500;
+  min-width: 90px;
+}
+
+.about__fact-value {
+  color: var(--color-text);
+  text-align: right;
+}
+
+.about__available {
+  color: #4caf50;
+  font-weight: 600;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .about__grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}

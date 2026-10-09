@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Serif+Display:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: 'Manrope', 'Segoe UI', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  color: #f7f4fb;
+  background: #080808;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --mono: 'DM Mono', Consolas, monospace;
+  --paper: #080808;
+  --ink: #f7f4fb;
+  --muted: #a6a0ad;
+  --line: rgba(230, 211, 255, .15);
+  --red: #cf8cff;
+  --yellow: #b67bff;
+  --green: #8b5cf6;
+  --blue: #251137;
+  --button-gradient: linear-gradient(110deg, #8c35f2, #e848a7);
+  --surface-gradient: radial-gradient(ellipse at 78% 18%, rgba(111,38,162,.3), transparent 50%), radial-gradient(ellipse at 7% 92%, rgba(171,41,123,.16), transparent 46%), linear-gradient(135deg, #080808, #100b16 56%, #080808);
+}
+
+html {
+  min-width: 320px;
+  scroll-behavior: smooth;
+  scroll-padding-top: 84px;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  background: #080808;
+  color: var(--ink);
+}
+
+body, button, a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button, a {
+  color: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+::selection {
+  color: var(--paper);
+  background: var(--green);
+}
+
+:focus-visible {
+  outline: 2px solid var(--red);
+  outline-offset: 4px;
+}
